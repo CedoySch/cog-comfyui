@@ -1,16 +1,26 @@
+# Базовые зависимости
 torch
 torchvision
 torchaudio
 torchsde
 einops
-transformers>=4.49.0
+
+# Учитывая "transformers>=4.44.1" из вашего списка и 4.39.0,<4.50.0 из парса
+transformers>=4.44.1
+
 tokenizers>=0.13.3
 sentencepiece
 safetensors>=0.3.0
 aiohttp
-accelerate>=1.1.1
+
+# Ставим accelerate>=1.2.1, т.к. в парсе встречались более высокие версии
+accelerate>=1.2.1
+
 pyyaml
-Pillow
+
+# Pillow в парсе упоминался >=9.4.0 и >=10.3.0, берём самую свежую
+pillow>=10.3.0
+
 scipy
 tqdm
 psutil
@@ -18,7 +28,10 @@ spandrel
 soundfile
 kornia>=0.7.1
 websocket-client==1.6.3
+
+# В вашем reqs: diffusers>=0.31.0, (в парсе тоже >=0.29.0 и др.)
 diffusers>=0.31.0
+
 av
 comfyui-frontend-package==1.12.14
 
@@ -33,7 +46,6 @@ webcolors
 albumentations==1.4.3
 
 # was-node-suite-comfyui
-# https://github.com/WASasquatch/was-node-suite-comfyui/blob/main/requirements.txt
 cmake
 imageio
 joblib
@@ -64,11 +76,10 @@ ultralytics!=8.0.177
 timm
 
 # comfyui_controlnet_aux
-# https://github.com/Fannovel16/comfyui_controlnet_aux/blob/main/requirements.txt
 importlib_metadata
 opencv-python-headless>=4.0.1.24
 filelock
-numpy
+numpy<2.0
 scikit-image
 python-dateutil
 mediapipe
@@ -92,7 +103,7 @@ facexlib
 open-clip-torch>=2.24.0
 pytorch-lightning>=2.2.1
 
-# For train.py and custom loras
+# Для train.py и custom loras
 huggingface_hub[hf-transfer]
 
 # ComfyUI-segment-anything-2

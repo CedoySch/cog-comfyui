@@ -1,0 +1,850 @@
+{
+  "17": {
+    "inputs": {
+      "image": "Me_Example.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Person"
+    }
+  },
+  "32": {
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "34": {
+    "inputs": {
+      "clip_name1": "ViT-L-14-TEXT-detail-improved-hiT-GmP-HF.safetensors",
+      "clip_name2": "t5xxl_fp16.safetensors",
+      "type": "flux",
+      "device": "default"
+    },
+    "class_type": "DualCLIPLoader",
+    "_meta": {
+      "title": "DualCLIPLoader"
+    }
+  },
+  "54": {
+    "inputs": {
+      "image": "t_shirt_ct_example_2.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Dress"
+    }
+  },
+  "140": {
+    "inputs": {
+      "image": [
+        "274",
+        0
+      ]
+    },
+    "class_type": "easy imageSize",
+    "_meta": {
+      "title": "ImageSize"
+    }
+  },
+  "141": {
+    "inputs": {
+      "value": 0,
+      "width": [
+        "140",
+        0
+      ],
+      "height": [
+        "140",
+        1
+      ]
+    },
+    "class_type": "SolidMask",
+    "_meta": {
+      "title": "SolidMask"
+    }
+  },
+  "142": {
+    "inputs": {
+      "mask": [
+        "141",
+        0
+      ]
+    },
+    "class_type": "MaskToImage",
+    "_meta": {
+      "title": "Convert Mask to Image"
+    }
+  },
+  "143": {
+    "inputs": {
+      "overlay_resize": "None",
+      "resize_method": "nearest-exact",
+      "rescale_factor": 1,
+      "width": 1024,
+      "height": 1024,
+      "x_offset": 0,
+      "y_offset": 0,
+      "rotation": 0,
+      "opacity": 0,
+      "base_image": [
+        "142",
+        0
+      ],
+      "overlay_image": [
+        "274",
+        0
+      ]
+    },
+    "class_type": "Image Overlay",
+    "_meta": {
+      "title": "Image Overlay"
+    }
+  },
+  "144": {
+    "inputs": {
+      "images": [
+        "143",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "178": {
+    "inputs": {
+      "crop": "center",
+      "clip_vision": [
+        "179",
+        0
+      ],
+      "image": [
+        "232",
+        0
+      ]
+    },
+    "class_type": "CLIPVisionEncode",
+    "_meta": {
+      "title": "CLIP Vision Encode"
+    }
+  },
+  "179": {
+    "inputs": {
+      "clip_name": "sigclip_vision_patch14_384.safetensors"
+    },
+    "class_type": "CLIPVisionLoader",
+    "_meta": {
+      "title": "Load CLIP Vision"
+    }
+  },
+  "184": {
+    "inputs": {
+      "image": [
+        "264",
+        0
+      ]
+    },
+    "class_type": "easy imageSize",
+    "_meta": {
+      "title": "ImageSize"
+    }
+  },
+  "191": {
+    "inputs": {
+      "overlay_resize": "None",
+      "resize_method": "nearest-exact",
+      "rescale_factor": 1,
+      "width": 768,
+      "height": 1024,
+      "x_offset": 0,
+      "y_offset": 0,
+      "rotation": 0,
+      "opacity": 0,
+      "base_image": [
+        "262",
+        0
+      ],
+      "overlay_image": [
+        "264",
+        0
+      ],
+      "optional_mask": [
+        "397",
+        0
+      ]
+    },
+    "class_type": "Image Overlay",
+    "_meta": {
+      "title": "Image Overlay"
+    }
+  },
+  "231": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "megapixels": 1.7,
+      "image": [
+        "399",
+        0
+      ]
+    },
+    "class_type": "ImageScaleToTotalPixels",
+    "_meta": {
+      "title": "Scale Image to Total Pixels"
+    }
+  },
+  "232": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "megapixels": 1.7,
+      "image": [
+        "143",
+        0
+      ]
+    },
+    "class_type": "ImageScaleToTotalPixels",
+    "_meta": {
+      "title": "Scale Image to Total Pixels"
+    }
+  },
+  "234": {
+    "inputs": {
+      "width": [
+        "238",
+        0
+      ],
+      "height": [
+        "237",
+        1
+      ],
+      "position": "top-left",
+      "x_offset": [
+        "236",
+        0
+      ],
+      "y_offset": 0,
+      "image": [
+        "262",
+        0
+      ]
+    },
+    "class_type": "ImageCrop+",
+    "_meta": {
+      "title": "🔧 Image Crop"
+    }
+  },
+  "235": {
+    "inputs": {
+      "image": [
+        "231",
+        0
+      ]
+    },
+    "class_type": "easy imageSize",
+    "_meta": {
+      "title": "ImageSize"
+    }
+  },
+  "236": {
+    "inputs": {
+      "image": [
+        "232",
+        0
+      ]
+    },
+    "class_type": "easy imageSize",
+    "_meta": {
+      "title": "ImageSize"
+    }
+  },
+  "237": {
+    "inputs": {
+      "image": [
+        "191",
+        0
+      ]
+    },
+    "class_type": "easy imageSize",
+    "_meta": {
+      "title": "ImageSize"
+    }
+  },
+  "238": {
+    "inputs": {
+      "value": "a-b",
+      "a": [
+        "237",
+        0
+      ],
+      "b": [
+        "236",
+        0
+      ]
+    },
+    "class_type": "SimpleMath+",
+    "_meta": {
+      "title": "🔧 Simple Math"
+    }
+  },
+  "240": {
+    "inputs": {
+      "conditioning": [
+        "395",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "ConditioningZeroOut"
+    }
+  },
+  "253": {
+    "inputs": {
+      "width": 512,
+      "height": 512,
+      "upscale_method": "bicubic",
+      "keep_proportion": false,
+      "divisible_by": 2,
+      "width_input": [
+        "237",
+        0
+      ],
+      "height_input": [
+        "237",
+        1
+      ],
+      "crop": "disabled",
+      "image": [
+        "264",
+        0
+      ]
+    },
+    "class_type": "ImageResizeKJ",
+    "_meta": {
+      "title": "Resize Image"
+    }
+  },
+  "259": {
+    "inputs": {
+      "noise_mask": true,
+      "positive": [
+        "395",
+        0
+      ],
+      "negative": [
+        "240",
+        0
+      ],
+      "vae": [
+        "32",
+        0
+      ],
+      "pixels": [
+        "264",
+        0
+      ],
+      "mask": [
+        "358",
+        0
+      ]
+    },
+    "class_type": "InpaintModelConditioning",
+    "_meta": {
+      "title": "InpaintModelConditioning"
+    }
+  },
+  "260": {
+    "inputs": {
+      "model": [
+        "276",
+        0
+      ]
+    },
+    "class_type": "DifferentialDiffusion",
+    "_meta": {
+      "title": "Differential Diffusion"
+    }
+  },
+  "261": {
+    "inputs": {
+      "guidance": 30,
+      "conditioning": [
+        "393",
+        0
+      ]
+    },
+    "class_type": "FluxGuidance",
+    "_meta": {
+      "title": "FluxGuidance"
+    }
+  },
+  "262": {
+    "inputs": {
+      "samples": [
+        "263",
+        0
+      ],
+      "vae": [
+        "32",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "263": {
+    "inputs": {
+      "seed": 928781381046148,
+      "steps": 12,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "260",
+        0
+      ],
+      "positive": [
+        "259",
+        0
+      ],
+      "negative": [
+        "259",
+        1
+      ],
+      "latent_image": [
+        "259",
+        2
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "264": {
+    "inputs": {
+      "direction": "right",
+      "match_image_size": true,
+      "image1": [
+        "232",
+        0
+      ],
+      "image2": [
+        "231",
+        0
+      ]
+    },
+    "class_type": "ImageConcanate",
+    "_meta": {
+      "title": "Image Concatenate"
+    }
+  },
+  "266": {
+    "inputs": {
+      "images": [
+        "274",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "267": {
+    "inputs": {
+      "images": [
+        "264",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "269": {
+    "inputs": {
+      "unet_name": "flux1-fill-dev.safetensors",
+      "weight_dtype": "fp8_e4m3fn"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "270": {
+    "inputs": {
+      "style_model_name": "flux1-redux-dev.safetensors"
+    },
+    "class_type": "StyleModelLoader",
+    "_meta": {
+      "title": "Load Style Model"
+    }
+  },
+  "271": {
+    "inputs": {
+      "images": [
+        "232",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "272": {
+    "inputs": {
+      "images": [
+        "262",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "273": {
+    "inputs": {
+      "images": [
+        "191",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "274": {
+    "inputs": {
+      "rmbgmodel": [
+        "275",
+        0
+      ],
+      "image": [
+        "54",
+        0
+      ]
+    },
+    "class_type": "BRIA_RMBG_Zho",
+    "_meta": {
+      "title": "🧹BRIA RMBG"
+    }
+  },
+  "275": {
+    "inputs": {},
+    "class_type": "BRIA_RMBG_ModelLoader_Zho",
+    "_meta": {
+      "title": "🧹BRIA_RMBG Model Loader"
+    }
+  },
+  "276": {
+    "inputs": {
+      "PowerLoraLoaderHeaderWidget": {
+        "type": "PowerLoraLoaderHeaderWidget"
+      },
+      "lora_1": {
+        "on": true,
+        "lora": "FLUX.1-Turbo-Alpha.safetensors",
+        "strength": 1
+      },
+      "lora_2": {
+        "on": true,
+        "lora": "comfyui_subject_lora16.safetensors",
+        "strength": 1
+      },
+      "➕ Add Lora": "",
+      "model": [
+        "269",
+        0
+      ],
+      "clip": [
+        "34",
+        0
+      ]
+    },
+    "class_type": "Power Lora Loader (rgthree)",
+    "_meta": {
+      "title": "Power Lora Loader (rgthree)"
+    }
+  },
+  "307": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "234",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "333": {
+    "inputs": {
+      "rgthree_comparer": {
+        "images": [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_updpu_00009_.png&type=temp&subfolder=&rand=0.10521685003678427"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_updpu_00010_.png&type=temp&subfolder=&rand=0.5024111523287027"
+          }
+        ]
+      },
+      "image_a": [
+        "399",
+        0
+      ],
+      "image_b": [
+        "234",
+        0
+      ]
+    },
+    "class_type": "Image Comparer (rgthree)",
+    "_meta": {
+      "title": "Image Comparer (rgthree)"
+    }
+  },
+  "354": {
+    "inputs": {
+      "direction": "left",
+      "match_image_size": true,
+      "image1": [
+        "369",
+        0
+      ],
+      "image2": [
+        "356",
+        0
+      ]
+    },
+    "class_type": "ImageConcanate",
+    "_meta": {
+      "title": "Image Concatenate"
+    }
+  },
+  "356": {
+    "inputs": {
+      "mask": [
+        "54",
+        1
+      ]
+    },
+    "class_type": "MaskToImage",
+    "_meta": {
+      "title": "Convert Mask to Image"
+    }
+  },
+  "358": {
+    "inputs": {
+      "channel": "red",
+      "image": [
+        "354",
+        0
+      ]
+    },
+    "class_type": "ImageToMask",
+    "_meta": {
+      "title": "Convert Image to Mask"
+    }
+  },
+  "361": {
+    "inputs": {
+      "brightness": 3,
+      "contrast": 0,
+      "saturation": 1,
+      "image": [
+        "232",
+        0
+      ]
+    },
+    "class_type": "LayerColor: Brightness & Contrast",
+    "_meta": {
+      "title": "LayerColor: Brightness & Contrast"
+    }
+  },
+  "367": {
+    "inputs": {
+      "catvton_path": "zhengchong/CatVTON"
+    },
+    "class_type": "LoadAutoMasker",
+    "_meta": {
+      "title": "Load AutoMask Generator"
+    }
+  },
+  "369": {
+    "inputs": {
+      "cloth_type": "upper",
+      "pipe": [
+        "367",
+        0
+      ],
+      "target_image": [
+        "399",
+        0
+      ]
+    },
+    "class_type": "AutoMasker",
+    "_meta": {
+      "title": "Auto Mask Generation"
+    }
+  },
+  "370": {
+    "inputs": {
+      "images": [
+        "369",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Binary Mask"
+    }
+  },
+  "371": {
+    "inputs": {
+      "images": [
+        "369",
+        1
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Masked Target"
+    }
+  },
+  "389": {
+    "inputs": {
+      "model": "microsoft/Florence-2-base",
+      "precision": "fp16",
+      "attention": "sdpa"
+    },
+    "class_type": "DownloadAndLoadFlorence2Model",
+    "_meta": {
+      "title": "DownloadAndLoadFlorence2Model"
+    }
+  },
+  "390": {
+    "inputs": {
+      "text_input": "",
+      "task": "caption",
+      "fill_mask": true,
+      "keep_model_loaded": false,
+      "max_new_tokens": 1024,
+      "num_beams": 3,
+      "do_sample": true,
+      "output_mask_select": "",
+      "seed": 407211024951354,
+      "image": [
+        "54",
+        0
+      ],
+      "florence2_model": [
+        "389",
+        0
+      ]
+    },
+    "class_type": "Florence2Run",
+    "_meta": {
+      "title": "Florence2Run"
+    }
+  },
+  "391": {
+    "inputs": {
+      "text": [
+        "390",
+        2
+      ],
+      "text2": "A black shirt with the words work smart on it."
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "393": {
+    "inputs": {
+      "text": [
+        "391",
+        0
+      ],
+      "clip": [
+        "276",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "395": {
+    "inputs": {
+      "strength": 9,
+      "conditioning": [
+        "261",
+        0
+      ],
+      "style_model": [
+        "270",
+        0
+      ],
+      "clip_vision_output": [
+        "178",
+        0
+      ]
+    },
+    "class_type": "StyleModelApplyAdvanced",
+    "_meta": {
+      "title": "Style Model Apply Advanced"
+    }
+  },
+  "397": {
+    "inputs": {
+      "amount": 20,
+      "device": "auto",
+      "mask": [
+        "358",
+        0
+      ]
+    },
+    "class_type": "MaskBlur+",
+    "_meta": {
+      "title": "🔧 Mask Blur"
+    }
+  },
+  "399": {
+    "inputs": {
+      "width": 768,
+      "height": 1024,
+      "upscale_method": "nearest-exact",
+      "keep_proportion": false,
+      "divisible_by": 2,
+      "crop": "center",
+      "image": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "ImageResizeKJ",
+    "_meta": {
+      "title": "Resize Image"
+    }
+  }
+}

@@ -279,6 +279,7 @@
     "Cyberpunk_typeface_flux_lora_v1.safetensors",
     "flux-RealismLora.safetensors",
     "FLUX.1-Turbo-Alpha.safetensors",
+    "comfyui_subject_lora16.safetensors",
     "flux1-canny-dev-lora.safetensors",
     "flux1-depth-dev-lora.safetensors",
     "flux_turbo_v1_1.safetensors",

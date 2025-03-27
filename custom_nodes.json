@@ -57,10 +57,6 @@
     "commit": "778a475"
   },
   {
-    "repo": "https://github.com/cubiq/ComfyUI_essentials",
-    "commit": "33ff89f"
-  },
-  {
     "repo": "https://github.com/shiimizu/ComfyUI-PhotoMaker-Plus",
     "commit": "459f5c0"
   },
@@ -89,20 +85,12 @@
     "commit": "2916eb3"
   },
   {
-    "repo": "https://github.com/ZHO-ZHO-ZHO/ComfyUI-BRIA_AI-RMBG",
-    "commit": "827fcd6"
-  },
-  {
     "repo": "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes",
     "commit": "d78b780"
   },
   {
     "repo": "https://github.com/huchenlei/ComfyUI-layerdiffuse",
     "commit": "b4f6a9e"
-  },
-  {
-    "repo": "https://github.com/kijai/ComfyUI-KJNodes",
-    "commit": "a5bd3c8"
   },
   {
     "repo": "https://github.com/Fannovel16/ComfyUI-Frame-Interpolation",
@@ -131,10 +119,6 @@
   {
     "repo": "https://github.com/TheMistoAI/ComfyUI-Anyline",
     "commit": "1ec3d61"
-  },
-  {
-    "repo": "https://github.com/rgthree/rgthree-comfy",
-    "commit": "ab37a0b"
   },
   {
     "repo": "https://github.com/fofr/comfyui-prompter-fofrai",
@@ -215,10 +199,6 @@
     "commit": "f097659"
   },
   {
-    "repo": "https://github.com/kijai/ComfyUI-Florence2",
-    "commit": "c9bd1d3"
-  },
-  {
     "repo": "https://github.com/kijai/ComfyUI-segment-anything-2",
     "commit": "c59676b"
   },
@@ -261,5 +241,41 @@
   {
     "repo": "https://github.com/Lightricks/ComfyUI-LTXVideo",
     "commit": "e2a7351"
+  },
+  {
+    "repo": "https://github.com/rgthree/rgthree-comfy",
+    "commit": "cb36126"
+  },
+  {
+    "repo": "https://github.com/pzc163/Comfyui-CatVTON",
+    "commit": "6ffd4a4"
+  },
+  {
+    "repo": "https://github.com/chflame163/ComfyUI_LayerStyle",
+    "commit": "a085d8c"
+  },
+  {
+    "repo": "https://github.com/yolain/ComfyUI-Easy-Use",
+    "commit": "ff6c0f0"
+  },
+  {
+    "repo": "https://github.com/kijai/ComfyUI-Florence2",
+    "commit": "257fec5"
+  },
+  {
+    "repo": "https://github.com/kijai/ComfyUI-KJNodes",
+    "commit": "52c2e31"
+  },
+  {
+    "repo": "https://github.com/ZHO-ZHO-ZHO/ComfyUI-BRIA_AI-RMBG",
+    "commit": "827fcd6"
+  },
+  {
+    "repo": "https://github.com/cubiq/ComfyUI_essentials",
+    "commit": "33ff89f"
+  },
+  {
+    "repo": "https://github.com/SozeInc/ComfyUI_Soze",
+    "commit": "df61e15"
   }
 ]
